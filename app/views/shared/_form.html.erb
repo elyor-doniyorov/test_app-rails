@@ -1,0 +1,12 @@
+<%= form_with model: @user, local: true do |f| %>
+<%= f.label :username %>
+<%= f.text_field :username, class: 'form-control' %><br><br>
+<%= f.label :fullname %>
+<%= f.text_field :fullname, class: 'form-control' %><br><br>
+<%= f.label :photo %>
+<%= f.text_field :photo, class: 'form-control' %><br><br>
+<%= f.label :coverImage %>
+<%= f.text_field :coverImage, class: 'form-control' %>
+
+<%= f.submit "Log in", class: " mt-2 btn btn-primary" %>
+<% end %>

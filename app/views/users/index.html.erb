@@ -1,5 +1,2 @@
-<%= form_with(url: _path, local: true) do |f| %>
-        <%= f.label :name %>
-        <%= f.text_field :name, class: 'form-control' %>
-        <%= f.submit "Log in", class: " mt-2 btn btn-primary" %>
-<% end %>
+<%= render 'shared/form' %>
+
