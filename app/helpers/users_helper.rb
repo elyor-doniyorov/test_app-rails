@@ -40,9 +40,9 @@ module UsersHelper
     def cover_photo(usr)
       usr = fill_user_images(usr)
       begin
-        image_tag(usr.cover_image, class: 'cover-img', alt: 'Cover_Image', onerror: 'imgErrorCover(this);')
+        image_tag(usr.coverImage, class: 'cover-img', alt: 'CoverImage', onerror: 'imgErrorCover(this);')
       rescue Sprockets::Rails::Helper::AssetNotFound
-        image_tag('https://raw.githubusercontent.com/Stricks1/cap-twitter/feature/app/assets/images/cover_default.jpg', class: 'cover-img', alt: 'Cover_Image')
+        image_tag('https://raw.githubusercontent.com/Stricks1/cap-twitter/feature/app/assets/images/cover_default.jpg', class: 'cover-img', alt: 'CoverImage')
       end
     end
   

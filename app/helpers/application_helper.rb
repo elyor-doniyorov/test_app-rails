@@ -56,7 +56,7 @@ module ApplicationHelper
   
     def fill_user_images(usr)
       usr.photo = 'https://raw.githubusercontent.com/Stricks1/cap-twitter/feature/app/assets/images/user_default.png' if usr.photo.blank?
-      usr.cover_image = 'https://raw.githubusercontent.com/Stricks1/cap-twitter/feature/app/assets/images/cover_default.jpg' if usr.cover_image.blank?
+      usr.coverImage = 'https://raw.githubusercontent.com/Stricks1/cap-twitter/feature/app/assets/images/cover_default.jpg' if usr.coverImage.blank?
       usr
     end
   
@@ -73,7 +73,7 @@ module ApplicationHelper
       cntnt = "<div class='bg-left-bt-tab col-4 col-md-3'><div class='d-flex flex-column'><div class='d-flex bg-left-tab'>"
       cntnt.concat(current_profile(usr))
       cntnt.concat("<span class='align-self-center bold-name'>")
-      cntnt.concat(usr.full_name)
+      cntnt.concat(usr.fullname)
       cntnt.concat("</span></div><div class='d-flex justify-content-between bg-left-tab'><div class='w-50 border-dark-bl-1 py-2'><span class='text-center d-block light-color'>")
       cntnt.concat(usr.followers.count.to_s)
       cntnt.concat("</span><span class='text-center d-block bold-flw'>Following</span></div><div class='w-50 border-dark-bl-2 py-2'><span class='text-center d-block light-color'>")
